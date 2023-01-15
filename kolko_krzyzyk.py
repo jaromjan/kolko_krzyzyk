@@ -1,7 +1,7 @@
-# gra kolko i krzyzyk - komputer rozpoczyna grę - komputer jest krzyżykiem - użytkownik jest kolkiem
+# gra kolko i krzyzyk - komputer rozpoczyna gre - komputer jest krzyzykiem - uzytkownik jest kolkiem
 # Tworzymy szablon
 szablon = " {} {} {}\n {} {} {}\n {} {} {}"
-# deklarujemy wartości początkowe pól
+# deklarujemy wartosci poczatkowe pol
 p1 = '-'
 p2 = '-'
 p3 = '-'
@@ -15,7 +15,7 @@ kontrolna = 1
 # poczatek programu wyswietlamy plansze
 komunikat = szablon.format(p1, p2, p3, p4, p5, p6, p7, p8, p9)
 print(komunikat)
-# Pobieramy identyfikator pola od użytkownika
+# Pobieramy identyfikator pola od uzytkownika
 while p1 == '-' or p2 == '-' or p3 == '-' or p4 == '-' or p5 == '-' or p6 == '-' or p7 == '-' or p8 == '-' or p9 == '-':
     px = input("Podaj identyfikator pola: ")
     while str(px) not in ('1', '2', '3', '4', '5', '6', '7', '8', '9'):
@@ -79,7 +79,7 @@ while p1 == '-' or p2 == '-' or p3 == '-' or p4 == '-' or p5 == '-' or p6 == '-'
             kontrolna = 0
         else:
             p9 = 'O'
-# komputer wykonuje ruch - ew można bardziej rozbudować
+# komputer wykonuje ruch - ewentualnie mozna bardziej rozbudowac
     if kontrolna == 1:
         if p2 == '-':
             p2 = 'X'
@@ -123,4 +123,3 @@ while p1 == '-' or p2 == '-' or p3 == '-' or p4 == '-' or p5 == '-' or p6 == '-'
         or (p2 == 'X' and p5 == 'X' and p8 == 'X') or (p4 == 'X' and p5 == 'X' and p6 == 'X')):
         print("Przegrana")
         break
-# print(komunikat)
